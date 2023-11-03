@@ -317,6 +317,7 @@ header .container .menu .main-menu .btn-login {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
+  padding-left: 50px;
 }
 .features .container .section-title2 h2 {
   color: #191919;
@@ -324,7 +325,8 @@ header .container .menu .main-menu .btn-login {
   font-weight: 700;
   font-size: 45px;
   padding-bottom: 48px;
-  padding-top: 20px
+  padding-top: 20px;
+  width: 450px;
 }
 .features .container .btn-yellow-long {
   background-color: #F9D783;
@@ -355,18 +357,18 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .features .content {
-  display: block;
-  /* grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
   color: #191919;
   text-decoration: none;
   text-align: left;
-  padding-left: 103px;
+  padding-left: 50px;
   gap: 30px;
 }
-/* .features .content p {
-  width: 200px;
-} */
+.features .content p {
+  width: 250px;
+}
 @media (min-width: 768px) {
   .features .content {
     grid-template-columns: 1fr 1fr;
@@ -468,7 +470,7 @@ header .container .menu .main-menu .btn-login {
     padding-top: 120px;
   }
 }
-.company .container .content .section-title3 p {
+.company .container .content .section-title3 {
   color: #F94D1C;
   margin-bottom: 10px;
 }
@@ -477,6 +479,7 @@ header .container .menu .main-menu .btn-login {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
+  padding-top: 20px;
 }
 .company .container .content .btns {
   display: flex;
@@ -571,10 +574,12 @@ header .container .menu .main-menu .btn-login {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
+  padding-top: 100px;
+  padding-bottom: 10px;
 }
-.our-services .container .section-title .description {
+.our-services .container h2 {
   font-weight: 700;
-  width: 200px;
+  width: 400px;
 }
 @media (max-width: 1000px) {
   .our-services .container .section-title {
@@ -595,6 +600,8 @@ header .container .menu .main-menu .btn-login {
   padding: 80px 50px;
   justify-content: space-between;
   background-color: #FFFFFF;
+  width: 300px;
+  
 }
 .our-services .container .service .panels:hover {
   color: #191919;
@@ -698,7 +705,17 @@ header .container .menu .main-menu .btn-login {
 .why-choose-us .container .explanation .section-title {
   display: block;
   width: 400px;
-  margin-bottom: -40px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: #F94D1C;
+  font-weight: 500;
+  font-size: 18px
+}
+.why-choose-us .container .explanation .section-title h2 {
+  color: #FFFFFF;
+  width: 400px;
+  font-weight: 700;
+  font-size: 45px;
 }
 @media (max-width: 768px) {
   .why-choose-us .container .explanation .section-title {
@@ -770,7 +787,18 @@ header .container .menu .main-menu .btn-login {
 }
 
 .project-and-case .container .section-title {
+  color: #F94D1C;
   text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px
+}
+.project-and-case .container h2 {
+  text-align: center;
+  padding-bottom: 80px;
+  font-weight: 700;
+  font-size: 45px;
 }
 .project-and-case .container .project-and-cases {
   display: grid;

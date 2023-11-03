@@ -5,6 +5,9 @@ import Feature from '../Sections/Feature'
 import OurServices from '../Sections/OurServices'
 import Member from '../Sections/Member'
 import Logos from '../Sections/Logos'
+import AboutCompany from '../Sections/AboutCompany'
+import WhyChooseUs from '../Sections/WhyChooseUs'
+import ProjectCaseStudies from '../Sections/ProjectCaseStudies'
 
 const Home = () => {
   return (
@@ -13,7 +16,10 @@ const Home = () => {
       <main>
         <Logos/>
         <Feature/>
+        <AboutCompany/>
         <OurServices/>
+        <WhyChooseUs/>
+        <ProjectCaseStudies/>
         <Member/>
       </main>
       <Footer/>
