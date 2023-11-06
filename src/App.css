@@ -55,7 +55,7 @@ html, body {
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
-  padding: 12px 30px;
+  padding: 15px 30px;
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
@@ -167,6 +167,9 @@ header .container .menu .top-menu .social-media a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
+}
+header .container .menu .top-menu .social-media li {
+  display: inline-block;
 }
 header .container .menu .top-menu .social-media a:hover {
   color: #7C7C7C;
@@ -792,7 +795,7 @@ header .container .menu .main-menu .btn-login {
   padding-top: 100px;
   padding-bottom: 20px;
   font-weight: 500;
-  font-size: 18px
+  font-size: 18px;
 }
 .project-and-case .container h2 {
   text-align: center;
@@ -852,6 +855,18 @@ header .container .menu .main-menu .btn-login {
 
 .meet-our-team {
   background-color: rgba(240, 208, 130, 0.93);
+  padding-top: 100px;
+}
+.meet-our-team .section-title {
+  color: #F94D1C;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.meet-our-team .section-title h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 45px;
 }
 @media (max-width: 1200px) {
   .meet-our-team .container .section-title {
@@ -870,7 +885,7 @@ header .container .menu .main-menu .btn-login {
 }
 .meet-our-team .container .team-btn {
   text-align: end;
-  margin-top: -130px;
+  margin-top: -70px;
   padding-bottom: 35px;
 }
 .meet-our-team .container .team-btn i {
@@ -950,6 +965,10 @@ header .container .menu .main-menu .btn-login {
 }
 .meet-our-team .container .Testimonial .section-title {
   text-align: center;
+  padding-top: 50px;
+}
+.meet-our-team .container .Testimonial .section-title h2 {
+  padding-bottom: 40px
 }
 @media (max-width: 990px) {
   .meet-our-team .container .Testimonial .section-title {
@@ -1068,6 +1087,19 @@ header .container .menu .main-menu .btn-login {
   padding-bottom: 200px;
 }
 
+.article-news .container .section-title {
+  padding-top: 100px;
+  color: #F94D1C;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.article-news .container .section-title h2 {
+  padding-bottom: 120px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 45px;
+}
 @media (max-width: 1000px) {
   .article-news .container .section-title {
     text-align: center;
@@ -1075,8 +1107,8 @@ header .container .menu .main-menu .btn-login {
 }
 .article-news .container .article-btn {
   text-align: end;
-  margin-top: -120px;
-  padding-bottom: 35px;
+  margin-top: -190px;
+  padding-bottom: 60px;
 }
 .article-news .container .article-btn i {
   padding-left: 5px;
@@ -1142,8 +1174,8 @@ header .container .menu .main-menu .btn-login {
 .Newsletter {
   background-color: #F0EFE9;
   position: relative;
-  padding: 80px;
-  padding-bottom: 80px;
+  padding: 100px;
+  padding-bottom: 100px;
 }
 .Newsletter .background-wavy-right {
   position: absolute;
@@ -1243,7 +1275,11 @@ footer .container .info .bottom-footer p {
 }
 footer .container .bottom-footer .social-media {
   margin-left: 200px;
-  letter-spacing: 10px;
+  letter-spacing: 20px;
+}
+footer .container .bottom-footer .social-media i {
+  font-size: 20px;
+  text-align: end;
 }
 footer .container .bottom-footer .social-media li {
   display: inline-block;
@@ -1255,6 +1291,7 @@ footer .container .bottom-footer .social-media li a {
 }
 footer .container.bottom-footer .social-media li a:hover {
   color: #7C7C7C;
+  
 }
 @media (max-width: 1200px) {
   footer .container .info .bottom-footer .social-media {
@@ -1269,7 +1306,7 @@ footer .container.bottom-footer .social-media li a:hover {
 footer .container .info .bottom-footer .footer-lines {
   position: absolute;
   bottom: 0px;
-  right: -354px;
+  right: -660px;
 }
 @media (max-width: 1400px) {
   footer .container .info .bottom-footer .footer-lines {

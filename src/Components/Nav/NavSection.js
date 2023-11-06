@@ -1,9 +1,6 @@
 import "./Nav.css"
 import React from 'react'
 import Img_logotype from "../../Assets/Images/Crito.svg"
-import Button from "../Generics/Button"
-import btnClasses from "../Header/Header"
-import toggleMenu from "../Header/Header"
 import { Link, NavLink } from 'react-router-dom'
 
 const NavSection = () => {
@@ -11,7 +8,6 @@ const NavSection = () => {
     <section className="nav">
     <div className="container">
         <Link to="/"><img className="logotype" src={Img_logotype} alt=""/></Link>
-        <button className={btnClasses} onClick={toggleMenu} className="menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
         <div className="menu">
             <div className="top-menu">
                 <div className="contact-information">
@@ -29,10 +25,10 @@ const NavSection = () => {
                     </div>
                 </div>
                 <div className="social-media">
-                    <a href="https://facebook.com/" target="_blank"><i className="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com/" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://instagram.com/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="https://linkedin.com/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+                    <li><Link to="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></Link></li>
+                    <li><Link to="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></Link></li>
+                    <li><Link to="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></Link></li>
+                    <li><Link to="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></Link></li>
                 </div>
             </div>
             <div className="main-menu">
@@ -44,7 +40,7 @@ const NavSection = () => {
                         <li><NavLink to="/contacts">Contacts</NavLink></li>
                     </ul>
                 </nav>
-                <Button text="Login" url="/login"/>
+                <Link to="/login" className="btn-yellow">Login<i className="fa-regular fa-arrow-up-right"></i></Link>
             </div>
         </div>
     </div>

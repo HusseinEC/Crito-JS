@@ -3,11 +3,13 @@ import Header from '../Header/Header'
 import Footer from '../Footer'
 import Feature from '../Sections/Feature'
 import OurServices from '../Sections/OurServices'
-import Member from '../Sections/Member'
 import Logos from '../Sections/Logos'
 import AboutCompany from '../Sections/AboutCompany'
 import WhyChooseUs from '../Sections/WhyChooseUs'
 import ProjectCaseStudies from '../Sections/ProjectCaseStudies'
+import MeetOurTeam from '../Sections/MeetOurTeam'
+import ArticleNews from '../Sections/ArticleNews'
+import Newsletter from '../Sections/Newsletter'
 
 const Home = () => {
   return (
@@ -20,7 +22,9 @@ const Home = () => {
         <OurServices/>
         <WhyChooseUs/>
         <ProjectCaseStudies/>
-        <Member/>
+        <MeetOurTeam/>
+        <ArticleNews/>
+        <Newsletter/>
       </main>
       <Footer/>
     </div>

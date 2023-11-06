@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../Footer'
-import Button from '../Generics/Button'
 import { Link } from 'react-router-dom'
 
 const NotFound = () => {

@@ -1,10 +1,10 @@
 import React from 'react'
 import SectionTitle from '../Generics/SectionTitle'
-import FeaturesBtn from '../Generics/FeaturesBtn'
 import Features1 from '../Generics/Features1'
 import Features2 from '../Generics/Features2'
 import Features3 from '../Generics/Features3'
 import Features4 from '../Generics/Features4'
+import { Link } from 'react-router-dom'
 
 const Feature = () => {
   return (
@@ -13,7 +13,7 @@ const Feature = () => {
         <div className="container">
             <div className="section-title2">
             <SectionTitle title="Features" description="Our Accounting is trusted by thousand of companies"/>
-            <FeaturesBtn title="Learn More" url="/services"/>
+            <Link to="/services" className='btn-yellow-long'>Learn More<i className="fa-regular fa-arrow-up-right"></i></Link>
             </div>
             <div className="content">
                 <div>
