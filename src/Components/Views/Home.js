@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Header/Header'
+import ShowcaseSection from '../Showcase/ShowcaseSection'
 import Footer from '../Footer'
 import Feature from '../Sections/Feature'
 import OurServices from '../Sections/OurServices'
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <div className='wrapper'>
       <Header/>
+      <ShowcaseSection/>
       <main>
         <Logos/>
         <Feature/>

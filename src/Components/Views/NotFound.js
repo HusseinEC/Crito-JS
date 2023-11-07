@@ -1,10 +1,12 @@
 import React from 'react'
 import Footer from '../Footer'
 import { Link } from 'react-router-dom'
+import Header from '../Header/Header'
 
 const NotFound = () => {
   return (
     <div className='wrapper'>
+      <Header/>
       <main>
         <section>
         <h1>404 Page Not Found</h1>

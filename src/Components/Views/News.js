@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../Header/Header'
 
 const News = () => {
   return (
-    <div>News</div>
+    <div className='wrapper'>
+      <Header/>
+    </div>
   )
 }
 
