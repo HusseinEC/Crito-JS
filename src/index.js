@@ -6,6 +6,7 @@ import Home from './Components/Views/Home'
 import Contacts from './Components/Views/Contacts'
 import News from './Components/Views/News'
 import Services from './Components/Views/Services'
+import NewsDetails from './Components/Views/NewsDetails';
 import PageNotFound from './Components/Views/NotFound'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -19,6 +20,7 @@ root.render(
         <Route path='/contacts' element={<Contacts/>}/>
         <Route path='/news' element={<News/>}/>
         <Route path='/services' element={<Services/>}/>
+        <Route path='/news_details' element={<NewsDetails/>}/>
         <Route path='*' element={<PageNotFound/>}/>
       </Routes>
     </BrowserRouter>
