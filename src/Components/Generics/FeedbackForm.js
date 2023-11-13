@@ -67,7 +67,7 @@ const FeedbackForm = () => {
         })
         console.log(result)
         if (result.status === 200)
-          setValidationMessage()
+          setValidationMessage("User has been created")
         else
           setErrorMessage("Something went wrong")
       }
@@ -76,6 +76,7 @@ const FeedbackForm = () => {
   return (
     <form onSubmit={handleSubmit}  noValidate className="feedback-form" method="post">
         <p className='errormessage'>{errorMessage}</p>
+        <p className='validationmessage'>{validationMessage}</p>
         <div className="name">
             <input value={name} onChange={(e) => handleChange(e)} className="form-input" type="text" tabindex="1" id="name" name="name" placeholder="Name*"></input>
             <label className={`${nameError ? "error": ""}`}>{`Name ${nameError ? "must be written": ""}`}</label>

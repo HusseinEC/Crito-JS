@@ -1619,6 +1619,9 @@ footer .container .info .bottom-footer .footer-lines {
 .feedback .container .error {
   color: red;
 }
+.feedback .container .validationmessage{
+  color: green;
+}
 .feedback .container h1 {
   font-family: "DM Sans", sans-serif;
   font-size: 45px;
