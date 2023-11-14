@@ -79,18 +79,18 @@ const FeedbackForm = () => {
         <p className='validationmessage'>{validationMessage}</p>
         <div className="name">
             <input value={name} onChange={(e) => handleChange(e)} className="form-input" type="text" tabindex="1" id="name" name="name" placeholder="Name*"></input>
-            <label className={`${nameError ? "error": ""}`}>{`Name ${nameError ? "must be written": ""}`}</label>
+            <p className={`${nameError ? "error": ""}`}>{`${nameError ? "Name must be written": ""}`}</p>
         </div>
         <div className="email">
             <input value={email} onChange={(e) => handleChange(e)} className="form-input" type="email" tabindex="3" id="email" name="email" placeholder="Email*"></input>
-            <label className={`${emailError ? "error": ""}`}>{`Email ${emailError ? "must be valid": ""}`}</label>
+            <p className={`${emailError ? "error": ""}`}>{`${emailError ? "Email must be valid": ""}`}</p>
         </div>
         <div className="text">
             <textarea value={message} onChange={(e) => handleChange(e)} className="form-input" name="message" id="text" placeholder="Your Feedback*"></textarea>
-            <label className={`${messageError ? "error": ""}`}>{`Message ${messageError ? "can't be empty": ""}`}</label>
+            <p className={`${messageError ? "error": ""}`}>{`${messageError ? "Message can't be empty": ""}`}</p>
         </div>
-        <div className="feedback-btn">
-          <button type='submit' className="btn-yellow-long">Send Message <i className="fa-regular fa-arrow-up-right"></i></button>
+        <div>
+          <button type='submit' className="feedback-btn">Send Message <i className="fa-regular fa-arrow-up-right"></i></button>
       </div>
     </form>
   )
